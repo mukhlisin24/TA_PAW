@@ -1,0 +1,107 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    position: relative;
+    /* background-color: #ededed; */
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+}
+
+.login-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    padding: 40px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.login-wrapper h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #c59d5f; /* new gold color */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.login-wrapper label {
+    font-size: 14px;
+    color: #f0f0f0;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.login-wrapper input[type="text"],
+.login-wrapper input[type="password"],
+.login-wrapper input[type="email"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background: rgba(0,0,0,0.35);
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.login-wrapper input:focus {
+    border-color: #c59d5f;
+    box-shadow: 0 0 8px rgba(197,157,95,0.6);
+    outline: none;
+}
+
+.login-wrapper button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    background: #c59d5f;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #222;
+}
+
+.login-wrapper button:hover {
+    background: #b18a50;
+    box-shadow: 0 4px 12px rgba(197,157,95,0.5);
+}
+
+.login-wrapper a {
+    color: #c59d5f;
+    font-weight: 600;
+}

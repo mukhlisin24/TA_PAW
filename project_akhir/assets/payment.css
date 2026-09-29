@@ -1,0 +1,122 @@
+body {
+        background-color: #f5f6fa;
+        font-family: 'Inter', sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .payment-wrapper {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .payment-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .payment-header h1 {
+        font-size: 26px;
+        font-weight: 600;
+        color: #222;
+    }
+
+    .payment-header p {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .payment-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .payment-card h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+    .payment-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 15px 0;
+    }
+
+    .payment-card li {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+    }
+
+    .payment-card li:last-child {
+        border-bottom: none;
+    }
+
+    .total-amount {
+        font-weight: 600;
+        font-size: 16px;
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    .payment-methods {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .payment-methods label {
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-size: 14px;
+    }
+
+    .payment-methods input[type="radio"] {
+        margin-right: 12px;
+    }
+
+    .payment-methods label:hover {
+        border-color: #c59d5f;
+        background-color: #fff8f0;
+    }
+
+    .btn-pay {
+        margin-top: 25px;
+        width: 100%;
+        padding: 14px 0;
+        background-color: #c59d5f;
+        border: none;
+        border-radius: 999px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 15px;
+        transition: background 0.3s;
+    }
+
+    .btn-pay:hover {
+        background-color: #b08d4f;
+    }
+
+    .error-message {
+        background: #ffe6e6;
+        color: #d32f2f;
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        text-align: center;
+    }

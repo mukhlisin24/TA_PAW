@@ -1,0 +1,248 @@
+
+
+/* GLOBAL */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ 
+/* HERO */
+.hero {
+    height: 700px;
+    background: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2') center/cover no-repeat;
+    position: relative;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.647);
+}
+.hero-content {
+    position: relative;
+    text-align: center;
+    padding-top: 300px;
+    color: white;
+}
+.hero-content h1 {
+    font-size: 80px;
+    margin: 0;
+    color: #c59d5f;
+
+}
+.hero-content p {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/* SEARCH */
+.search-section {
+    margin-top: 40px;
+}
+.search-box {
+    display: flex;
+    gap: 12px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+.search-box input,
+.search-box select {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.search-box button {
+    background: #c59d5f;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.search-box button:hover {
+    background: #b58a4a;
+}
+
+/* ABOUT */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 60px;
+}
+.about-left img {
+    width: 100%;
+    border-radius: 10px;
+}
+.about-right h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #c59d5f;
+}
+
+/* ROOMS */
+.section-title {
+    font-size: 28px;
+    margin-top: 40px;
+    color: #c59d5f;
+}
+
+.rooms .room-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+.room-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+.room-card:hover {
+    transform: translateY(-6px);
+}
+.room-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.room-info {
+    padding: 15px;
+}
+.room-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.room-info p {
+    font-size: 14px;
+    color: #777;
+}
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: #c59d5f;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.btn:hover {
+    background: #b58a4a;
+}
+
+.btn2{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: #191919;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    float: right;
+    
+
+}
+.btn2:hover {
+    background: #191919;
+}
+
+/* ROOM PAGE */
+.room-hero {
+    height: 350px;
+    background: url('../upload/photo-2.jpeg') center/cover no-repeat;
+    position: relative;
+}
+.room-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+.room-hero h1 {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 42px;
+}
+
+.room-details {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 10px;
+}
+.thumb-row {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.thumb-row img {
+    width: 32%;
+    border-radius: 6px;
+}
+
+.room-info-box h2 {
+    color: #c59d5f;
+    margin-bottom: 10px;
+}
+.amenities {
+    list-style: none;
+    padding: 0;
+}
+.amenities li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.price-box {
+    margin: 14px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #c59d5f;
+}
+.book-btn {
+    background: #c59d5f;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+}
+.book-btn:hover {
+    background: #b58a4a;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    background: white;
+    border-top: 1px solid #eee;
+}

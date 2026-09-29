@@ -1,0 +1,72 @@
+        body {
+            font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #f5f5f7;
+            margin: 0;
+            padding: 20px;
+        }
+        .detail-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 14px;
+            padding: 18px 20px 22px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .meta-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 999px;
+            font-size: 11px;
+        }
+        .bg-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+        .bg-confirmed {
+            background: #d4edda;
+            color: #155724;
+        }
+        .bg-cancelled {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .rooms-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+        .rooms-table th,
+        .rooms-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .rooms-table th {
+            background: #faf7ee;
+            text-align: left;
+        }
+        .total-row {
+            text-align: right;
+            font-weight: 600;
+        }
+        .btn-back {
+            display: inline-block;
+            margin-top: 15px;
+            background: #333;
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 13px;
+        }
