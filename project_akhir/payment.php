@@ -22,9 +22,10 @@ $customer_name = isset($_SESSION['name']) ? $_SESSION['name'] : "Customer";
 $customer_email = isset($_SESSION['email']) ? $_SESSION['email'] : "customer@example.com";
 
 require_once 'midtrans-php/Midtrans.php';
+require_once 'config.php';
 
-\Midtrans\Config::$serverKey = "YOUR_MIDTRANS_SERVER_KEY";
-\Midtrans\Config::$isProduction = false;
+\Midtrans\Config::$serverKey = getenv('MIDTRANS_SERVER_KEY') ?: "YOUR_MIDTRANS_SERVER_KEY";
+\Midtrans\Config::$isProduction = (getenv('MIDTRANS_IS_PRODUCTION') === 'true');
 \Midtrans\Config::$isSanitized = true;
 \Midtrans\Config::$is3ds = true;
 
